@@ -1,19 +1,24 @@
-// get homepage element
+// get homepage element 
 let homepagecontainer = document.getElementsByClassName("homepage-container");
-// get courses+annoucements div
-let homepage = homepagecontainer[0].children[0];
-// get sidebar div
+
+// hide the sidebar
 let sidebar = homepagecontainer[0].children[1];
-// byebye sidebar
 sidebar.style.display = "none";
-// center courses+announcements
-homepage.style.position = "relative";
-homepage.style.left = "50%";
-homepage.style.transform = "translateX(-50%)";
-homepage.style.display = "grid";
-homepage.style.gridTemplateColumns = "2fr 1fr";
-homepage.style.gridGap = "2rem";
-homepage.style.width = "100%";
-// hide title
-let title = homepage.children[0];
-title.children[0].style.display = "none";
+
+// hide the dashboard
+let dashboard = homepagecontainer[0].children[0].children[0]
+dashboard.style.display = "none";
+
+// hide the announcements
+let announcements = homepagecontainer[0].children[0].children[2]
+announcements.style.display = "none";
+
+// center courses
+let courses = homepagecontainer[0].children[0].children[1];
+courses.style.position = "absolute";
+courses.style.height = "500px";
+courses.style.width = "900px";
+courses.style.top = "50%";
+courses.style.left = "50%";
+courses.style.marginTop = "-250px";
+courses.style.marginLeft = "-450px";

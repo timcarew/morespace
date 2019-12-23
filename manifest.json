@@ -1,12 +1,16 @@
 {
   "name": "morespace",
-  "version": "1.1",
-  "description": "This extension hides all Brightspace Widgets besides \"Courses\" and \"Announcements\". *Not Affiliated with Brightspace in any way. This extension was created for personal purposes only.*",
+  "version": "2.0",
+  "description": "This extension hides all Brightspace Widgets besides \"Courses\". *Not Affiliated with Brightspace in any way. This extension was created for personal purposes only.*",
   "content_scripts": [
     {
       "run_at": "document_end",
-      "matches": ["https://online.mun.ca/d2l/home"],
-      "js": ["content.js"]
+      "matches": [
+        "https://online.mun.ca/d2l/home"
+      ],
+      "js": [
+        "content.js"
+      ]
     }
   ],
   "manifest_version": 2
